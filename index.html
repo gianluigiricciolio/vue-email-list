@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{title}}</h1>
+        <!-- show emails only after the for has cycled for nCall time -->
+        <p v-if="emails.length===nCall">{{emails}}</p>
+        <p v-else>Caricamento in corso...</p>
+
+    </div>
+
+
+    <!-- vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- importo axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- my script -->
+    <script src="./main.js"></script>
+</body>
+</html>
